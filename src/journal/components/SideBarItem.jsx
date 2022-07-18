@@ -5,12 +5,12 @@ import { TurnedInNot } from '@mui/icons-material';
 import { setActiveNote } from '../../store/journal';
 
 
-export const SideBarItem = ({ title, body, id, date, imageURLs=[] }) => {
+export const SideBarItem = ({ title, body, id, date, imageUrls=[] }) => {
 
     const dispatch = useDispatch();
 
     const onClickNote = ()=> {
-        dispatch(setActiveNote({title, body, id, date, imageURLs}))
+        dispatch(setActiveNote({title, body, id, date, imageUrls}))
     }
 
     const newTitle = useMemo(()=>{
